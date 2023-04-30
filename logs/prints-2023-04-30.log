@@ -1,0 +1,5 @@
+21:05:15.048 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
+21:05:17.287 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Launch Browser
+21:05:20.503 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Open the URL
+21:05:21.765 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Login Link Clicked
+21:05:38.757 [TestNG-test=TestModuleThree-1] INFO  Test.ArkFramWork.LoginTest - User unable to login with wrong data

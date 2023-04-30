@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suite" thread-count="3" >
+	 <listeners>
+     <listener class-name="listeners.Listeners"/>
+  </listeners>
+  <!-- If you want to run paraller testing inside a single module 
+  <test thread-count="2" parallel="true" name="Test">
     <classes>
       <class name="Test.ArkFramWork.TwoTest"/>
       <class name="Test.ArkFramWork.LoginTest"/>
       <class name="Test.ArkFramWork.ThreeTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> -->
+  <test name="Modelone">
+	   <classes>
+      <class name="Test.ArkFramWork.TwoTest"/>
+     
+    </classes>
+  </test> 
+  <test thread-count="4" parallel="true" name="TestModuletwo">
+    <classes>
+      
+      <class name="Test.ArkFramWork.ThreeTest"/>
+    </classes>
+  </test>
+  <test thread-count="4" parallel="true" name="TestModuleThree">
+    <classes>
+    
+      <class name="Test.ArkFramWork.LoginTest"/>
+      
+    </classes>
+  </test>
 </suite> <!-- Suite -->

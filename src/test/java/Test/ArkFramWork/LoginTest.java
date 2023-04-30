@@ -2,6 +2,8 @@ package Test.ArkFramWork;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -10,19 +12,25 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
+
 import pageObjects.AccountPage;
 import pageObjects.LandingPage;
 
 public class LoginTest {
 
-	WebDriver driver;
+	public WebDriver driver;
 	BaseClass base;
+	Logger log;
 
 	@BeforeMethod
 	public void openUrl() throws IOException, InterruptedException {
 		base = new BaseClass();
 		driver = base.launchBrowser();
+		// Log4J implementation
+		log = LogManager.getLogger(LoginTest.class.getName());
+		log.debug("Launch Browser");
 		driver.get(base.propFun().getProperty("url"));
+		log.debug("Open the URL");
 	}
 
 	@Test(dataProvider = "getLoginData")
@@ -31,6 +39,8 @@ public class LoginTest {
 		LandingPage landingPageRef = new LandingPage(driver);
 		landingPageRef.accountLink().click();
 		landingPageRef.loginLink().click();
+		// debug is a nornal log
+		log.debug("Login Link Clicked");
 		Thread.sleep(3000);
 		LoginPage loginPageRef = new LoginPage(driver);
 		loginPageRef.emailField().sendKeys(email);
@@ -44,10 +54,13 @@ public class LoginTest {
 		try {
 			accountPageRef.accouountSection().isDisplayed();
 			actualresult = "Successfull";
+			log.info("User loging with right credentials");
 
 		} catch (Exception e) {
 			System.out.println(expectedResult);
 			actualresult = "faliure";
+			//Assert.assertTrue(false);
+			log.info("User unable to login with wrong data");
 		}
 
 		Assert.assertEquals(actualresult, expectedResult);
@@ -57,6 +70,7 @@ public class LoginTest {
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
+		log.debug("Clossing the Browser");
 	}
 
 	@DataProvider
