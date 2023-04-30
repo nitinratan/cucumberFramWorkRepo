@@ -13,12 +13,12 @@ public class LandingPage {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath = "//a[@title='My Account']")
-	WebElement accountLink;
+	private WebElement accountLink;
 	public WebElement accountLink() {
 		return accountLink;
 	}
 	@FindBy(xpath ="//li[@class='dropdown open']//li[2]")
-	WebElement loginLink;
+	private WebElement loginLink;
 	public WebElement loginLink() {
 		return loginLink;
 	}

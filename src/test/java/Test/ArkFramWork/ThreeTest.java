@@ -14,7 +14,7 @@ public class ThreeTest {
 	BaseClass base;
 	Logger log;
 	@Test
-	public void openUrl() throws IOException, InterruptedException {
+	public void threeTest() throws IOException, InterruptedException {
 		base = new BaseClass();
 		driver = base.launchBrowser();
 		// Log4J implementation

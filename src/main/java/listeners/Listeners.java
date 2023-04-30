@@ -13,25 +13,30 @@ import Test.ArkFramWork.BaseClass;
 import utilities.ExtentReporter;
 
 public class Listeners implements ITestListener {
-	ExtentReports extentReport;
+	ExtentReports extentReport = ExtentReporter.getExtentReport();
 	ExtentTest extentTest;
+	ThreadLocal<ExtentTest> extentTestThread = new ThreadLocal<ExtentTest>();
 	//String testName;
 	@Override
 	public void onTestStart(ITestResult result) {
-		extentReport = ExtentReporter.getExtentReport();
+		//extentReport = ExtentReporter.getExtentReport();
+		
 		String testName = result.getName();
 		extentTest = extentReport.createTest(testName+"Execution Start");
+		extentTestThread.set(extentTest);
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		String testName = result.getName();
-		extentTest.log(Status.PASS, testName + "got passed");
+		//extentTest.log(Status.PASS, testName + "got passed");
+		extentTestThread.get().log(Status.PASS,testName+"Test Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		extentTest.fail(result.getThrowable());
+		//extentTest.fail(result.getThrowable());
+		extentTestThread.get().fail(result.getThrowable());
 		BaseClass base = new BaseClass();
 		WebDriver driver=null;
 		//below method will give Test function name
@@ -44,7 +49,8 @@ public class Listeners implements ITestListener {
 			e.printStackTrace();
 		}
 		try{
-			base.takeScreenShot(testName, driver);
+			String screenshotFilePath = base.takeScreenShot(testName, driver);
+			extentTestThread.get().addScreenCaptureFromPath(screenshotFilePath, testName);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

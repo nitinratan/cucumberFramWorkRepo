@@ -48,10 +48,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		return driver;
 	}
 
-	public void takeScreenShot(String testName, WebDriver driver) throws IOException {
+	public String takeScreenShot(String testName, WebDriver driver) throws IOException {
 		File SourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String destinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
 		FileUtils.copyFile(SourceFile,new File(destinationFilePath));
+		return destinationFilePath;
 	}
   
   }

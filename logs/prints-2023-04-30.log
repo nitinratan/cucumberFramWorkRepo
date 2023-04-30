@@ -1,5 +1,7 @@
-21:05:15.048 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
-21:05:17.287 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Launch Browser
-21:05:20.503 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Open the URL
-21:05:21.765 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Login Link Clicked
-21:05:38.757 [TestNG-test=TestModuleThree-1] INFO  Test.ArkFramWork.LoginTest - User unable to login with wrong data
+23:28:34.758 [main] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
+23:28:36.866 [main] DEBUG Test.ArkFramWork.LoginTest - Launch Browser
+23:28:40.091 [main] DEBUG Test.ArkFramWork.LoginTest - Open the URL
+23:28:40.931 [main] DEBUG Test.ArkFramWork.LoginTest - Login Link Clicked
+23:28:58.824 [main] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
+23:29:00.856 [main] DEBUG Test.ArkFramWork.LoginTest - Launch Browserr class ---->2
+23:29:06.825 [main] DEBUG Test.ArkFramWork.LoginTest - Open the URLr class ---->2

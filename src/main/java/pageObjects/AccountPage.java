@@ -13,7 +13,7 @@ public class AccountPage {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath ="//div/h2[text()='My Account']")
-	WebElement accountSection;
+	private WebElement accountSection;
 	public WebElement accouountSection() {
 		return accountSection;
 	}

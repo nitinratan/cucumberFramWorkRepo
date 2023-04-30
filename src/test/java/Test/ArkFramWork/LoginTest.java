@@ -59,7 +59,7 @@ public class LoginTest {
 		} catch (Exception e) {
 			System.out.println(expectedResult);
 			actualresult = "faliure";
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
 			log.info("User unable to login with wrong data");
 		}
 

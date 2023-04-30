@@ -1,1 +1,3 @@
-21:05:39.050 [TestNG-test=TestModuleThree-1] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
+23:29:07.097 [main] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
+23:29:09.022 [main] DEBUG Test.ArkFramWork.LoginTest - Launch Browser class ---->3
+23:29:15.182 [main] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser

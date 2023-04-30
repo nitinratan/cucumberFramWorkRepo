@@ -9,23 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Modelone</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,393</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestModuletwo</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,148</td><td></td><td></td></tr>
-<tr><td><a href="#t2">TestModuleThree</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">38,589</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">60,130</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">61,134</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Modelone &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test.ArkFramWork.TwoTest</td><td><a href="#m0">openUrl</a></td><td rowspan="1">1682868878176</td><td rowspan="1">14555</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestModuletwo &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.ArkFramWork.ThreeTest</td><td><a href="#m1">openUrl</a></td><td rowspan="1">1682868894070</td><td rowspan="1">4290</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">TestModuleThree &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Test.ArkFramWork.LoginTest</td><td><a href="#m2">login</a></td><td rowspan="2">1682868905577</td><td rowspan="2">8873</td></tr><tr class="passedeven"><td><a href="#m3">login</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.ArkFramWork.LoginTest</td><td><a href="#m0">login</a></td><td rowspan="1">1682877520092</td><td rowspan="1">18061</td></tr><tr class="failedodd"><td rowspan="1">Test.ArkFramWork.ThreeTest</td><td><a href="#m1">threeTest</a></td><td rowspan="1">1682877547100</td><td rowspan="1">7482</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test.ArkFramWork.LoginTest</td><td><a href="#m2">login</a></td><td rowspan="1">1682877506103</td><td rowspan="1">8319</td></tr><tr class="passedodd"><td rowspan="1">Test.ArkFramWork.TwoTest</td><td><a href="#m3">twoTest</a></td><td rowspan="1">1682877538829</td><td rowspan="1">7996</td></tr></tbody>
 </table>
-<h2>Modelone</h2><h3 id="m0">Test.ArkFramWork.TwoTest#openUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestModuletwo</h2><h3 id="m1">Test.ArkFramWork.ThreeTest#openUrl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at Test.ArkFramWork.ThreeTest.openUrl(ThreeTest.java:24)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestModuleThree</h2><h3 id="m2">Test.ArkFramWork.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>veer@gmail.com</td><td>12345</td><td>Successfull</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Test.ArkFramWork.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vejyar@gmail.com</td><td>45676</td><td>faliure</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">Test.ArkFramWork.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>vejyar@gmail.com</td><td>45676</td><td>faliure</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at Test.ArkFramWork.LoginTest.login(LoginTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test.ArkFramWork.ThreeTest#threeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at Test.ArkFramWork.ThreeTest.threeTest(ThreeTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test.ArkFramWork.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>veer@gmail.com</td><td>12345</td><td>Successfull</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test.ArkFramWork.TwoTest#twoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

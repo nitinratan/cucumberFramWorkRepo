@@ -24,19 +24,19 @@ public class LoginPage {
 	}------------------------------------------------------------------------------------------------------------------*/
 	
 	@FindBy(id = "input-email")
-	WebElement emailField;
+	private WebElement emailField;
 	
 	public WebElement emailField() {
 		return emailField;
 	}
 	@FindBy(id="input-password")
-	WebElement passwordField;
+	private WebElement passwordField;
 	
 	public WebElement passwordField() {
 		return passwordField;
 	}
 	@FindBy(xpath="//input[@value ='Login']")
-	WebElement loginButton;
+	private WebElement loginButton;
 	
 	public WebElement loginButton() {
 		return loginButton;
