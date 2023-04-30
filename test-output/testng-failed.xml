@@ -5,8 +5,9 @@
     <classes>
       <class name="Test.ArkFramWork.LoginTest">
         <methods>
-          <include name="browserCloser"/>
-          <include name="login"/>
+          <include name="openUrl"/>
+          <include name="tearDown"/>
+          <include name="login" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- Test.ArkFramWork.LoginTest -->
     </classes>
