@@ -15,6 +15,7 @@ public class TwoTest {
 	@Test
 	public void twoTest() throws IOException, InterruptedException {
 		System.out.println("Changes done by other, now before start pullthe code");
+		System.out.println("Changes done by interndevlopment , branching cocept");
 		base = new BaseClass();
 		driver = base.launchBrowser();
 		// Log4J implementation
