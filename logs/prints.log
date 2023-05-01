@@ -1,3 +1,5 @@
-23:29:07.097 [main] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
-23:29:09.022 [main] DEBUG Test.ArkFramWork.LoginTest - Launch Browser class ---->3
-23:29:15.182 [main] DEBUG Test.ArkFramWork.LoginTest - Clossing the Browser
+09:52:14.958 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+09:52:15.353 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x5bc3353965d3533f
+09:52:15.764 [main] DEBUG Test.ArkFramWork.LoginTest - Launch Browser
+09:52:17.739 [main] DEBUG Test.ArkFramWork.LoginTest - Open the URL
+09:52:23.039 [main] INFO  Test.ArkFramWork.LoginTest - User loging with right credentials

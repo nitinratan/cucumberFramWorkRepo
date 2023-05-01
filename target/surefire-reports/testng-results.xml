@@ -1,83 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-30T17:41:47 IST" name="Suite" finished-at="2023-04-30T17:42:35 IST" duration-ms="48897">
+  <suite started-at="2023-05-01T09:52:06 IST" name="Suite" finished-at="2023-05-01T09:52:23 IST" duration-ms="17142">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@8462f31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-30T17:41:47 IST" name="Test" finished-at="2023-04-30T17:42:35 IST" duration-ms="48897">
-      <class name="Test.ArkFramWork.LoginTest">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:Test.ArkFramWork.LoginTest@7ef82753]" started-at="2023-04-30T17:41:47 IST" name="openUrl" finished-at="2023-04-30T17:42:01 IST" duration-ms="14247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.ArkFramWork.LoginTest@7ef82753]" started-at="2023-04-30T17:42:01 IST" name="login" data-provider="getLoginData" finished-at="2023-04-30T17:42:09 IST" duration-ms="8360" status="PASS">
+    <test started-at="2023-05-01T09:52:06 IST" name="Test" finished-at="2023-05-01T09:52:23 IST" duration-ms="17142">
+      <class name="runner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@8462f31]" started-at="2023-05-01T09:52:06 IST" name="setUpClass" finished-at="2023-05-01T09:52:07 IST" duration-ms="587" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[veer@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Successfull]]>
+                <![CDATA[org.testng.TestRunner@491cafec]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.ArkFramWork.LoginTest@7ef82753]" started-at="2023-04-30T17:42:09 IST" name="tearDown" finished-at="2023-04-30T17:42:10 IST" duration-ms="236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:Test.ArkFramWork.LoginTest@7ef82753]" started-at="2023-04-30T17:42:10 IST" name="openUrl" finished-at="2023-04-30T17:42:17 IST" duration-ms="7770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.ArkFramWork.LoginTest@7ef82753]" started-at="2023-04-30T17:42:17 IST" name="login" data-provider="getLoginData" finished-at="2023-04-30T17:42:35 IST" duration-ms="17835" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@8462f31]" started-at="2023-05-01T09:52:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T09:52:23 IST" duration-ms="16399" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vejyar@gmail.com]]>
+                <![CDATA["Login with valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[45676]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[faliure]]>
+                <![CDATA["Application Login"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.ArkFramWork.LoginTest@7ef82753]" started-at="2023-04-30T17:42:35 IST" name="tearDown" finished-at="2023-04-30T17:42:35 IST" duration-ms="256" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@8462f31]" started-at="2023-05-01T09:52:23 IST" name="tearDownClass" finished-at="2023-05-01T09:52:23 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test.ArkFramWork.LoginTest -->
-      <class name="Test.ArkFramWork.ThreeTest">
-        <test-method signature="threeTest()[pri:0, instance:Test.ArkFramWork.ThreeTest@4681c175]" started-at="2023-04-30T17:42:35 IST" name="threeTest" finished-at="2023-04-30T17:42:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- threeTest -->
-      </class> <!-- Test.ArkFramWork.ThreeTest -->
-      <class name="Test.ArkFramWork.TwoTest">
-        <test-method signature="twoTest()[pri:0, instance:Test.ArkFramWork.TwoTest@4b741d6d]" started-at="2023-04-30T17:41:47 IST" name="twoTest" finished-at="2023-04-30T17:41:47 IST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- twoTest -->
-      </class> <!-- Test.ArkFramWork.TwoTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.Runner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

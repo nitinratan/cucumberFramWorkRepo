@@ -122,7 +122,7 @@
 					<version>3.0.0</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>testngRunner.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
